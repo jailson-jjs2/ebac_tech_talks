@@ -1,0 +1,23 @@
+.btn {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;/* PARA OCUPAR TODOS ESPAÇO EM BRANCO DO TEXTO */
+
+  &--primary {
+    color: #fff;
+    background-color: #4F2AC3;
+  }
+
+  @media (max-width: 640px) {
+    display: block;/* FEZ O BOTÃO OCUPAR TODA LINHA */
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}

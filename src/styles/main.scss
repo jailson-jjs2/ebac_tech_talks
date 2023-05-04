@@ -1,4 +1,7 @@
 @use 'hero'; /* IMPORTA O ARQUVO _hero.scss */
+@use 'components/infos_bar';
+@use 'components/btn';
+@use 'event';
 
 * { /* RESET */
   margin: 0;
@@ -6,6 +9,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: #fff;
+  list-style: none;/* PARA REMOVER MARCADOR */
 }
 
 .container {/* LARGURA DA PAG */

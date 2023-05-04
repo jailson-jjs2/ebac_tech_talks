@@ -1,0 +1,40 @@
+.infos-bar {
+  background-color: #fff;
+  padding: 16px 24px;
+  display: flex; /* PARA ARRUMAR O BTN */
+  justify-content: space-between;/* PARA DISTRIBUIR OS ITENS */
+  
+  &__infos{
+    display: flex;
+    gap: 40px; /* TB ESPAÇAMENTO */
+
+    &__item {
+      font-size: 14px;
+      color: #000;
+
+      b {
+        color: #000;
+        font-size: 18px;
+        display: block;/* POIS A TAG b POR PADRÃO É INLINE */
+      }
+    }
+  }
+
+  @media (max-width: 640px) {/* CELULAR */
+    display: block;
+
+    &__infos {
+      display: block;/* PARA ALINHA ABAIXO AS li */
+
+      &__item {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__infos {
+      gap: 16px;
+    }
+  }
+}
