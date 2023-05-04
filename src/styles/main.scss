@@ -1,3 +1,24 @@
-body {
-  background-color: aqua;
+@use 'hero'; /* IMPORTA O ARQUVO _hero.scss */
+
+* { /* RESET */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.container {/* LARGURA DA PAG */
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 640px) { /* CELULAR */
+    max-width: 80%;
+  }
+
+  @media (max-width: 1024px) {/* TABLET */
+    max-width: 90%;
+    padding-left: 0cap;
+  }
 }
