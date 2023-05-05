@@ -1,5 +1,7 @@
+@use '../variables';
+
 .infos-bar {
-  background-color: #fff;
+  background-color: variables.$priTextColor;
   padding: 16px 24px;
   display: flex; /* PARA ARRUMAR O BTN */
   justify-content: space-between;/* PARA DISTRIBUIR OS ITENS */
@@ -10,10 +12,10 @@
 
     &__item {
       font-size: 14px;
-      color: #000;
+      color: variables.$secTextColor;
 
       b {
-        color: #000;
+        color: variables.$secTextColor;
         font-size: 18px;
         display: block;/* POIS A TAG b POR PADRÃO É INLINE */
       }
